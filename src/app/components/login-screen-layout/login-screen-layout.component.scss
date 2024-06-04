@@ -1,0 +1,111 @@
+main{
+    display: flex;
+    background-color: #f7f7f7;
+    font-family: sans-serif
+    ;
+}
+
+section{
+    align-items: center;
+}
+
+/*---------------------------left side style----------------------------------*/
+
+.login-session{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 28vw;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 10px 0px 13px rgba(201, 196, 196, 0.5);
+
+}
+
+h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px ;
+    margin: 40px;
+}
+
+.login-info{
+    width: 80%;
+}
+
+
+input{
+    border: none;
+    padding: 10px;
+    margin: 0;
+    width: 90%;
+    border-radius: 7px;
+    background-color: #f7f7f7;
+}
+
+.text-email, .text-password{
+    color: #555555;
+    margin-bottom: 6px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.forgot-password{
+    text-align: end;
+    font-size: 12px;
+    color: #0859b6;
+    text-decoration: underline;
+}
+
+.login-button{
+    background-color: #7001FD;
+    border-radius: 7px;
+    color: white;
+    margin-top: 8px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+ 
+}
+
+span{
+    text-align: center;
+    margin: 15PX;
+    font-size: 10PX;
+    font-weight: 400;
+    color: #C2C2C2;
+}
+
+.signup-button{
+    border: 2px, solid, #7001FD ;
+    width: 80%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    color: #7001FD;
+    
+}
+
+
+/*---------------------------Right side style----------------------------------*/
+
+.image-session{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+    color: #000000;
+    font-weight: 500;
+}
+
+.image-session-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
