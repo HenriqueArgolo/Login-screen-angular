@@ -1,8 +1,12 @@
+@import "../../../styles/variables.scss";
+
+
 main{
     display: flex;
-    background-color: #f7f7f7;
+    background-color: $main-background-color;
+    flex-direction: row;
     font-family: sans-serif
-    ;
+
 }
 
 section{
@@ -14,8 +18,8 @@ section{
 .login-session{
     display: flex;
     flex-direction: column;
+    flex-grow: 0.3;
     justify-content: center;
-    width: 28vw;
     height: 100vh;
     background-color: #ffffff;
     box-shadow: 10px 0px 13px rgba(201, 196, 196, 0.5);
@@ -44,7 +48,7 @@ input{
 }
 
 .text-email, .text-password{
-    color: #555555;
+    color: $text-color;
     margin-bottom: 6px;
     font-size: 14px;
     text-align: left;
@@ -59,7 +63,9 @@ input{
 }
 
 .login-button{
-    background-color: #7001FD;
+    position: relative;
+    background-color: $primary-color;
+    box-shadow: 5px 5px 10px rgba(95, 71, 233, 0.5);
     border-radius: 7px;
     color: white;
     margin-top: 8px;
@@ -67,6 +73,18 @@ input{
     padding: 10px;
     width: 100%;
  
+}
+.forgot-password, .signup-button, .login-button:hover{
+    cursor: pointer;
+}
+
+.login-button:active{
+    transform: scale(1.02);
+    
+}
+
+.signup-button:active{
+    transform: scale(1.02);
 }
 
 span{
@@ -77,11 +95,18 @@ span{
     color: #C2C2C2;
 }
 
+span::before{
+
+}
+
+
 .signup-button{
+    position: relative;
     border: 2px, solid, #7001FD ;
     width: 80%;
     padding: 10px;
     background-color: #ffffff;
+    box-shadow: 3px 5px 8px rgba(126, 107, 236, 0.5);
     border-radius: 7px;
     color: #7001FD;
     
@@ -93,7 +118,7 @@ span{
 .image-session{
     display: flex;
     flex-direction: column;
-    width: 80vw;
+    flex-grow: 1.7;
     justify-content: center;
     height: 100vh;
 }
