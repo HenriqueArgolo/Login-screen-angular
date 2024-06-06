@@ -11,4 +11,6 @@ export class LoginScreenLayoutComponent {
 @Input() title: string =""; 
 @Input() primaryBtnText: String = ""
 @Input() secundaryBtnText: String = ""
+
 }
+

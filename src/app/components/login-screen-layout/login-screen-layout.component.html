@@ -1,20 +1,18 @@
 <main>
     <section class="login-session">
         <img src="/assets/svg/logo.svg" />
-        <div class="login-info">
-
-            <h2>{{title}}</h2>
-            <p class="text-email">Email Address</p>
-            <input placeholder="example@email.com" />
-            <p class="text-password">Password</p>
-            <input placeholder="Enter your password" />
-            <p class="forgot-password">Forgot password?</p>
+        <h2>{{title}}</h2>
+        <div class="content">
+            <ng-content></ng-content>
             <button class="login-button">{{primaryBtnText}}</button>
-
+            <div class="divider-container">
+                <div class="left-line"> </div>
+                <span>OR</span>
+                <div class="left-line"></div>
+            </div>
+            <button class="signup-button">{{secundaryBtnText}}</button>
         </div>
-        <span>OR</span>
-
-        <button class="signup-button">{{secundaryBtnText}}</button>
+       
     </section>
 
     <section class="image-session">
